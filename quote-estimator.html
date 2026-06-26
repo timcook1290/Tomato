@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Estimator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">BizName</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                <li><a href="visualizer.html">Visualizer</a></li>
+                <li><a href="quote-estimator.html" class="active">Quote Estimator</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2 style="text-align: center;">Cost Estimator Calculator</h2>
+            <p style="text-align: center;">Apna area aur quality choose karke instant estimation paayein.</p>
+            
+            <div class="tool-box">
+                <div class="form-group">
+                    <label for="service-type">Service Type Selection:</label>
+                    <select id="service-type">
+                        <option value="basic">Basic (₹50 / sq.ft)</option>
+                        <option value="premium">Premium (₹120 / sq.ft)</option>
+                        <option value="luxury">Luxury (₹250 / sq.ft)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="area-size">Total Area Size (in Sq. Ft.):</label>
+                    <input type="number" id="area-size" placeholder="Example: 500" min="1">
+                </div>
+                
+                <button onclick="calculateQuote()">Calculate Estimate</button>
+                
+                <div id="quote-result" class="result-box">Fill inputs to see estimation.</div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 BizName. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
