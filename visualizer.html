@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizer Tool</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">BizName</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                <li><a href="visualizer.html" class="active">Visualizer</a></li>
+                <li><a href="quote-estimator.html">Quote Estimator</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2 style="text-align: center;">Live Color Visualizer</h2>
+            <p style="text-align: center;">Niche diye gaye options se color select karke live preview dekhein.</p>
+            
+            <div class="tool-box">
+                <div class="form-group">
+                    <label for="color-picker">Select Wall Color:</label>
+                    <select id="color-picker" onchange="changeColor()">
+                        <option value="#bdc3c7">Default Grey</option>
+                        <option value="#3498db">Ocean Blue</option>
+                        <option value="#e74c3c">Warm Red</option>
+                        <option value="#2ecc71">Emerald Green</option>
+                        <option value="#f1c40f">Bright Yellow</option>
+                    </select>
+                </div>
+                
+                <div id="preview-box">Live Preview Wall</div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 BizName. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
